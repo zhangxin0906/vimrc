@@ -147,7 +147,7 @@ vmap S :s//g<LEFT><LEFT>
 
 
 "------  NERDTree Options  ------
-let NERDTreeIgnore=['CVS','\.dSYM$', '.git', '.DS_Store', '\.swp$', '\.swo$']
+let NERDTreeIgnore=['CVS','\.dSYM$', '.git', '.pyc', '.DS_Store', '\.swp$', '\.swo$']
 
 "setting root dir in NT also sets VIM's cd
 let NERDTreeChDirMode=2
@@ -355,7 +355,7 @@ if has("gui_running")
 	endif
 else
 	set t_Co=256
-	colorscheme Mustang
+	colorscheme softblue
 	set mouse=a
 endif
 

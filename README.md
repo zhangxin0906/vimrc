@@ -89,6 +89,12 @@ Other than the myriad of built-in methods for navigating text...
 * Use `<Leader><Leader>b` to highlight and jump to previous words
 * Use `<Leader><Leader>w` to highlight and jump to following words
 
+### Folding
+
+* Use `zc` to close fold
+* Use `zo` to open fold
+  
+
 ### Copying and Pasting between OS
 
 * Use `<Leader>c` to copy the highlighted text into the OS clipboard

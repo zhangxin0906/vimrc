@@ -355,7 +355,9 @@ if has("gui_running")
 	endif
 else
 	set t_Co=256
-	colorscheme softblue
+"	colorscheme softblue
+"	colorscheme dante
+	colorscheme leo
 	set mouse=a
 endif
 
@@ -364,3 +366,6 @@ endif
 if filereadable($HOME.'/.vimrc_local')
 	source $HOME/.vimrc_local
 endif
+
+set clipboard=unnamed
+

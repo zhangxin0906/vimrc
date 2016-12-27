@@ -115,7 +115,7 @@ hi ModeMsg			cterm=bold
 hi MoreMsg			cterm=none		ctermfg=40
 hi NonText			cterm=none		ctermfg=21
 hi Question			cterm=none		ctermfg=40
-hi Search				cterm=none		ctermfg=16		ctermbg=248		guifg=#000000	guibg=#a8a8a8
+hi Search				cterm=none		ctermfg=White		ctermbg=Yellow		guifg=#000000	guibg=#a8a8a8
 hi SignColumn		cterm=none		ctermbg=16		guibg=#000000
 hi StatusLine		cterm=bold		ctermfg=255		ctermbg=19		guifg=#0000af	guibg=#ffffff
 hi StatusLineNC	cterm=none		ctermfg=252		ctermbg=17		guifg=#00005f guibg=#d0d0d0

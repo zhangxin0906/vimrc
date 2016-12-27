@@ -368,4 +368,5 @@ if filereadable($HOME.'/.vimrc_local')
 endif
 
 set clipboard=unnamed
+set tabstop=4 shiftwidth=4 expandtab
 

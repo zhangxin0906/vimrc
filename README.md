@@ -99,3 +99,10 @@ Other than the myriad of built-in methods for navigating text...
 
 * Use `<Leader>c` to copy the highlighted text into the OS clipboard
 * Use `<Leader>v` to paste the OS clipboard into the document
+
+### SmoothScroll
+
+Smooth scroll is enabled by default.
+
+* Use `<F3>` to toggle smooth scroll
+

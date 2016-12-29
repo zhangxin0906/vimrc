@@ -368,5 +368,8 @@ if filereadable($HOME.'/.vimrc_local')
 endif
 
 set clipboard=unnamed
-set tabstop=4 shiftwidth=4 expandtab
 
+" F3 to toggle smooth scroll
+nnoremap <F3> :call ToggleSmoothScroll() <Enter>
+" Enable smooth scroll by default
+let g:smoothscroll_enabled = 1

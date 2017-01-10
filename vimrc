@@ -369,6 +369,21 @@ endif
 
 set clipboard=unnamed
 
+
+function! ToggleMouse()
+    " check if mouse is enabled
+    if &mouse == 'a'
+        " disable mouse
+        set mouse=
+    else
+        " enable mouse everywhere
+        set mouse=a
+    endif
+endfunc
+" F4 to toggle mouse support
+nnoremap <F4> :call ToggleMouse() <Enter>
+
+
 " F3 to toggle smooth scroll
 nnoremap <F3> :call ToggleSmoothScroll() <Enter>
 " Enable smooth scroll by default

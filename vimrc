@@ -128,12 +128,13 @@ nnoremap <silent> <leader>b :nohlsearch<CR>
 
 " http://www.vim.org/scripts/script.php?script_id=2572
 " <Leader>a will open a prmompt for a term to search for
-noremap <leader>a :Ack 
+noremap <leader>a :Ack
 
 " <Leader>A will close the new window created for that ack search
-noremap <leader>A <C-w>j<C-w>c<C-w>l
+" noremap <leader>A <C-w>j<C-w>c<C-w>l
+noremap <leader>A :ccl<CR>
 
-let g:ackprg="ag --vimgrep --column"
+let g:ackprg="ag --column"
 
 " CtrlP will load from the CWD, makes it easier with all these nested repos
 let g:ctrlp_working_path_mode = ''

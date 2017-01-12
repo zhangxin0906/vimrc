@@ -26,8 +26,11 @@ endfunction
 
 function DisableSmoothScroll()
     let g:smoothscroll_enabled = 0
-    unmap <C-U>
-    unmap <C-D>
+    try
+        unmap <C-U>
+        unmap <C-D>
+    catch
+    endtry
 endfunction
 
 function ToggleSmoothScroll()

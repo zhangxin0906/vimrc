@@ -99,7 +99,6 @@ nnoremap <Leader>k <C-w>k
 "<Leader>= = Normalize window widths
 nnoremap <Leader>= :wincmd =<CR>
 
-
 "------  Buffer Navigation  ------
 " Ctrl Left/h & Right/l cycle between buffers
 noremap <silent> <C-left> :bprev<CR>
@@ -387,4 +386,4 @@ nnoremap <F4> :call ToggleMouse() <Enter>
 " F3 to toggle smooth scroll
 nnoremap <F3> :call ToggleSmoothScroll() <Enter>
 " Enable smooth scroll by default
-let g:smoothscroll_enabled = 1
+let g:smoothscroll_enabled = 0

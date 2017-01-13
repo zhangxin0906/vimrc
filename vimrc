@@ -138,12 +138,14 @@ let g:ackprg="ag --vimgrep --column"
 let g:ctrlp_working_path_mode = ''
 
 " CtrlP won't show results from node_modules
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|coverage|target|dist)|(\.(swp|ico|git|svn|png|jpg|gif|ttf))$'
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|coverage|target|dist)|(\.(swp|ico|git|svn|png|jpg|gif|ttf|pyc))$'
 
 "type S, then type what you're looking for, a /, and what to replace it with
 nmap S :%s//g<LEFT><LEFT>
 vmap S :s//g<LEFT><LEFT>
 
+"type P, then replace --old-- with original text, --new-- with replace text
+nmap P :! egrep -lRZ '--old--' --include=\*.py * \| xargs -0 -l sed -i -e 's/--old--/--new--/g'
 
 "------  NERDTree Options  ------
 let NERDTreeIgnore=['CVS','\.dSYM$', '.git', '.pyc', '.DS_Store', '\.swp$', '\.swo$']
@@ -225,6 +227,8 @@ au BufNewFile,BufRead *.ejs set filetype=html
 
 "------  SCSS Filetype Settings  ------
 autocmd FileType scss set iskeyword+=-
+
+let g:syntastic_python_checkers = ['flake8']
 
 
 "------  Markdown Settings  ------

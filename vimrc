@@ -132,7 +132,7 @@ noremap <leader>a :Ack
 " <Leader>A will close the new window created for that ack search
 noremap <leader>A <C-w>j<C-w>c<C-w>l
 
-let g:ackprg="ag --vimgrep --column"
+let g:ackprg="ag --column"
 
 " CtrlP will load from the CWD, makes it easier with all these nested repos
 let g:ctrlp_working_path_mode = ''
@@ -213,7 +213,7 @@ autocmd BufNewFile,BufRead *.eslintrc set filetype=json
 au BufNewFile,BufReadPost *.coffee set shiftwidth=2 softtabstop=2 expandtab
 autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 au BufWritePost *.coffee silent make!
-autocmd QuickFixCmdPost *.coffee nested cwindow | redraw!
+autocmd QuickFixCmdPost * nested cwindow | redraw!
 
 
 "------  JSX Filetype Settings ------

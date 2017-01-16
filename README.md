@@ -102,7 +102,29 @@ Other than the myriad of built-in methods for navigating text...
 
 ### SmoothScroll
 
-Smooth scroll is enabled by default.
+Smooth scroll is disabled by default.
 
 * Use `<F3>` to toggle smooth scroll
 
+### Toggle Mouse
+
+Use `<F4>` to toggle mouse support
+
+
+### Replace
+
+Type `S` to replace in current buffer
+Type `P` to replace in whole project, you need to replace `--old--` and `--new--` with text you want
+
+### Surround
+
+Use vim-surround [https://github.com/tpope/vim-surround] to add surroundings to text.
+
+Use `cs"(` to replace `""` with `()`, in normal mode
+Use `ds"` to delete `""` surrounds, in normal mode
+Use `S)` to surround visual text with `()`, in visial mode
+
+
+### Save readonly file
+
+Type `:w!!`, which is equal to `:w !sudo tee %`

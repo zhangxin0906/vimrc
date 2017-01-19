@@ -148,7 +148,7 @@ vmap S :s//g<LEFT><LEFT>
 "type P, then replace --old-- with original text, --new-- with replace text
 nmap P :! egrep -lRZ '--old--' --include=\*.py * \| xargs -0 -l sed -i -e 's/--old--/--new--/g'
 
-" for OSX, you may use the following instead.
+" for OSX, you may use the following instead. put it in ~/.vimrc_local
 " nmap P :! egrep -lRZ '--old--' --include=\*.py * \| xargs sed -i "" -e 's/--old--/--new--/g'
 
 "------  NERDTree Options  ------

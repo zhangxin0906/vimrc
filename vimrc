@@ -60,6 +60,9 @@ map <Leader>v "+gP
 " <Leader>c = Copy
 map <Leader>c "+y
 
+" replace currently selected text with default register without yanking it
+vnoremap p "_dP
+"
 " Accidentally pressing Shift K will no longer open stupid man entry
 noremap K <nop>
 

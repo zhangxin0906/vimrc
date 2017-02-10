@@ -142,7 +142,7 @@ let g:ackprg="ag --column"
 let g:ctrlp_working_path_mode = ''
 
 " CtrlP won't show results from node_modules
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|coverage|target|dist)|(\.(swp|ico|git|svn|png|jpg|gif|ttf|pyc))$'
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|coverage|target|dist|build)|(\.(swp|ico|git|svn|png|jpg|gif|ttf|pyc))$'
 
 "type S, then type what you're looking for, a /, and what to replace it with
 nmap S :%s//g<LEFT><LEFT>

@@ -19,3 +19,6 @@
 [submodule "bundle/vim-erlang-skeletons"]
 	path = bundle/vim-erlang-skeletons
 	url = https://github.com/vim-erlang/vim-erlang-skeletons.git
+[submodule "bundle/erlang-motions"]
+	path = bundle/erlang-motions
+	url = https://github.com/vim-erlang/erlang-motions.vim.git
